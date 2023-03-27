@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css"/>
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Caveat&family=Fjalla+One&family=Rampart+One&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background"></div>
+    <form id="signinform" action="action_page.php" method="post">
+        <div class="goldlogo">
+            <img src="Screenshot 2023-03-20 at 11.11.44 AM.png.png">
+        </div>
+      
+        <div class="container">
+          <label id="fontsize" for="uname"><b>Username</b></label>
+          <input class="forminput" type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label id="fontsize" for="psw"><b>Password</b></label>
+          <input class="forminput" type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button id="login" type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+            <span class="usr">Forgot <a href="#">username?</a></span>
+            <span class="crusr">Create Account <a href="#">click here</a></span>
+        </div>
+
+      </form>
+      <div id="sizingrightside">
+        <h1 id="welcome">Welcome Back</h1>
+        <!--<h2 id="about">About</h2>
+        <ul id="paragraph">
+            <li>Avandra is the goddess of adventure</li>
+            <li>You will be able to explore the great outdoors from your bedroom and plan feature events
+                by either running, hiking, camping and so much more</li>
+            <li>please enjoy what we have to offer to imbrace your inner adventure!</li>
+        </ul>-->
+      </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+    <script src="login.js"></script>
+</body>
+</html>
