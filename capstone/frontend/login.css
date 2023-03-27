@@ -1,87 +1,100 @@
-html {
-    height: 100%;
+* {
+	box-sizing: border-box;
 }
 body {
-    height: 100%;
-    display: flex;
+	font-family: poppins;
+	font-size: 16px;
+	color: #fff;
 }
-* {
-    z-index: 1;
+.form-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto auto;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 500px;
+	height: 430px;
 }
-#background {
-    background-image: url(https://images.unsplash.com/photo-1440557555298-fc011558650b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJsdXIlMjBsYW5kc2NhcGV8ZW58MHx8MHx8&w=1000&q=80);
-    
-    filter: blur(6px);
-    -webkit-filter: blur(8px);
-
-    /* Full height */
-    height: 100%; 
-    width: 100%;
-    position: absolute;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.form-box:before {
+	background-image: url(https://images.unsplash.com/photo-1603041592657-0709d7796f44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8TXdMVFAwTWtZRVF8fGVufDB8fHx8&auto=format&fit=crop&w=420&q=60);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	filter: blur(2px);
 }
-#content {
-    z-index: 1;
-    display: flex;
+.form-box .header-text {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
 }
-img{
-    width: 60%;
-    height: 60%;
-    border-radius: 93px;
+.form-box input {
+	margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: poppins;
 }
-.container {
-    border-style: none;
-    border-width: 10px;
-    border-color: rgb(192, 147, 81);
-    font-family: 'Bodoni Moda', serif;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 38%;
+.form-box input[type=checkbox] {
+	display: none;
 }
-about {
-    list-style-type: circle;
-    display: flex;
-    flex-direction: column;
+.form-box label {
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
 }
-#welcome {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 60px;
+.form-box label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #ddd;
 }
-.forminput {
-    height: 6%;
-    width: 142%;
-    border-radius: 10px;
-    border-color: black;
-    border-style: solid;
+.form-box input[type=checkbox]:checked+label:before {
+	content: "\2713";
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
 }
-#signinform {
-    width: 50%
+.form-box span {
+	font-size: 14px;
 }
-#login {
-    height: 23px;
-    width: 55px;
-    border-radius: 10px;
-    border-color: black;
-    border-style: solid;
-    background-color: rgb(230, 169, 78);
+.form-box button {
+	background-color: rgb(15, 69, 41);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
 }
-#fontsize {
-    font-size: 25px;
-}
-#about {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 33px;
-}
-#paragraph {
-    font-size: 29px;
-    font-family: 'Bodoni Moda', serif;
-
-}
-#sizingrightside {
-    width: 50%;
+span a {
+	color: #BBB;
 }
