@@ -1,0 +1,89 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1600298882438-de4298571be4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fG91dGRvb3JzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    background-size: 100%;
+    font-family: 'Alata', sans-serif;
+
+}
+#logo {
+    font-family: 'Fasthand', cursive;
+    font-size: 35px;
+    position: fixed;
+}
+#profilepicture {
+    height: 65px;
+    width: 65px;
+    border-radius: 30px;
+    margin-left: 90%;
+    margin-bottom: 15%;
+    margin-top: -3%;
+    
+}
+#profilepage {
+    height: 45px;
+    width: 55px;
+    background-color: transparent;
+    border-style: none;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    margin-top: -2.5%;
+    
+}
+#logout {
+    height: 45px;
+    width: 55px;
+    background-color: transparent;
+    border-style: none;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    margin-left: 84%;
+}
+ul {
+    color: rgb(238, 110, 60);
+}
+#trails {
+    height: 45;
+    width: 55;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+#events {
+    height: 45;
+    width: 55;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#camp {
+    height: 45;
+    width: 55;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#nearbyLakes {
+    height: 45;
+    width: 55;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#hiking {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}

@@ -18,10 +18,10 @@ body {
 	left: 0;
 	right: 0;
 	width: 500px;
-	height: 430px;
+	height: 630px;
 }
 .form-box:before {
-	background-image: url("https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtcGluZ3xlbnwwfHwwfHw%3D&w=1000&q=80");
+	background-image: url("https://images.unsplash.com/photo-1500687957377-1980ef9a86d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG91dGRvb3JzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -85,7 +85,7 @@ body {
 	font-size: 14px;
 }
 .form-box button {
-	background-color: rgb(211, 180, 118);
+	background-color: rgb(204, 116, 28);
 	color: #fff;
 	border: none;
 	border-radius: 5px;
