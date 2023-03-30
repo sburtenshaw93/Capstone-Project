@@ -28,30 +28,57 @@
     <img id="profilepicture" src="https://live.staticflickr.com/65535/49942355807_63b0af75c6_c.jpg"/>
     <button id="profilepage">Profile Page</button>
 </div>
-<div id="hiking">
-    <button id="trails">Hiking Trails</button>
-    <!-- <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>  -->
-    <div id="running">
-        <button id="events">Running Events</button>
-        <!-- <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a> -->
+<div id="movearound">
+<div class="hikingdropdown">
+    <button onclick="hikingFunction()" class="hikingdropbtn">Hiking Trails</button>
+    <div id="hikingmyDropdown" class="hikingdropdown-content">
+      <a href="https://www.alltrails.com/?ref=header">Search 🔍</a> 
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAb4cUPO17lBJ_RQEOYMZu3kssVAzQUtbXhvdjPoWQFg&usqp=CAU&ec=48665701" />
+      <a href="https://www.alltrails.com/trail/us/utah/silver-lake-trail?search=true">Silver Lake Trail</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmKYvjVI6YMeVkWvSCCT4ORSwk2qHmzJIFr9WJk986VA&usqp=CAU&ec=48665701"/>
+      <a href="https://www.alltrails.com/parks/us/utah/timpanogos-cave-national-monument?search=true">Timpanogos Cave</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjfnqB_34WbMkBnNG7RLwd_4nnAL-_3IcranIvMwU_w&usqp=CAU&ec=48665701"/>
+      <a href="https://www.alltrails.com/explore?b_tl_lat=40.47201756254776&b_tl_lng=-111.72342387285164&b_br_lat=40.30021147912697&b_br_lng=-111.48584452714852">Stewart Falls</a>
     </div>
-    <div id="camping">
-        <button id="camp">Camping</button>
-        <!-- <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a> -->
+  </div>
+  <div class="runningdropdown">
+    <button onclick="runningFunction()" class="runningdropbtn">Running Events</button>
+    <div id="runningmyDropdown" class="runningdropdown-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROdkJSDvxsQiG0AJGW8uCPT514cAdAgjFW-mVHvgJfWA&usqp=CAU&ec=48665701"/>
+        <a href="https://saltlakecitymarathon.com/race-info-maps/schedule/">Salt Lake Marathon April 22nd</a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FJxuGDpqfqPTJq0pQSiaBFmClgzLnavI0yfpDRAPyQ&usqp=CAU&ec=48665701"/>
+      <a href="https://www.utahvalleymarathon.com">Utah Valley Marathon June 3rd</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzPpaiSwewNpwKDIrBQFLFB3tz7QpoBd-dAocGX102sg&usqp=CAU&ec=48665701"/>
+      <a href="https://runtasticevents.com/races/timp-half/">Timp Half June 24th</a>
     </div>
-    <div id="lakes">
-        <button id="nearbyLakes">Near By Lakes</button>
-        <!-- <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a> -->
+  </div>
+  <div class="campdropdown">
+    <button onclick="campFunction()" class="campdropbtn">Camping</button>
+    <div id="campmyDropdown" class="campdropdown-content">
+      <a href="https://www.recreation.gov">Search 🔍</a>  
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfvam5J_qJgda8dKsCDmuOOIsCHpwHFCLnrGXZfpHtg&usqp=CAU&ec=48665701"/>
+      <a href="https://www.recreation.gov/search?q=Moab%20&start=0">Moab</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5LKkN_Qm-KvjYGRsUxoJd8yZOV5aLyZR0A_ViLFl9mA&usqp=CAU&ec=48665701"/>
+      <a href="https://www.recreation.gov/camping/gateways/2599">Bryce Canyon</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6rXxl-GpPIXDIZOpzdAxA3dix_zUGgJBP5PemKUslw&usqp=CAU&ec=48665701"/>
+      <a href="https://www.recreation.gov/camping/campgrounds/234188">Timpanogos Campground</a>
     </div>
-</div>
+  </div>
+    
+<div class="lakesdropdown">
+    <button onclick="lakesFunction()" class="lakesdropbtn">Near By Lakes</button>
+    <div id="lakesmyDropdown" class="lakesdropdown-content">
+      <a href="https://www.visitutah.com/search?q=&pageSize=12&language=en-us&types=all">Search 🔍</a>  
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYE8txfV_phXD5WX1gcAMs_JP7t5q3Oe6ksImsilm5Q&usqp=CAU&ec=48665701"/>
+      <a href="https://www.google.com/maps/dir//Silver+Lake,+Utah/@40.6041735,-111.5889376,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8752719c1cea5faf:0xb2dd8d320eb70ed!2m2!1d-111.5889376!2d40.6041735!3e0">Silver Lake</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5SWvoXMd7KG6kAvDRHFug_P5piE4GGuEj7lrI3cnPjQ&usqp=CAU&ec=48665701"/>
+      <a href="https://www.google.com/maps/dir//Tibble+Fork+Reservoir,+Utah/@40.4823404,-111.6440872,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x875277e871142ce5:0x17d4525eb61ae2cc!2m2!1d-111.6440872!2d40.4823404!3e0">Tibble Fork Reservoir</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtRAjfxxOxPNv05kS1RvW34m9HmL9WGBtDLoaQtyI9cg&usqp=CAU&ec=48665701"/>
+      <a href="https://www.google.com/maps/dir//Deer+Creek+Reservoir,+Utah/@40.44528,-111.4961523,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x874d8b1599076d0f:0xf0cff7c6fe750e11!2m2!1d-111.4961523!2d40.44528!3e0">Deer Creek</a>
+    </div>
+  </div>
+  </div>
+  
 </head>
 <body>
 </body>
