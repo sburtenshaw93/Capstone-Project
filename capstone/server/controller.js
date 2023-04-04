@@ -12,4 +12,15 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
     }
 })
 
-module.exports =
+module.exports = {
+    getTrails: (req, res) => {
+        sequelize.query(`
+        SELECT * FROM trails
+        `).then((dbRes) => {
+            res.status(200).send(dbRes)
+        }).catch(err => {
+            console.log('error', err);
+            res.status(500).send('Error getting trails')
+        })
+    }
+}

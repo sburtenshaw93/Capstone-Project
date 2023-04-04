@@ -70,3 +70,35 @@ function lakesFunction() {
     }
   }
 
+// ---------------------------Hiking links-------------------------------  
+
+const getTrails = () => {
+  axios.get('http://localhost:5513/trails').then((res) => {
+    const trails = res.data[0];
+    const hikingDropDown = document.getElementById("hikingmyDropdown")
+    for (let i = 0; i < trails.length; i++) {
+      const trail = trails[i]
+      const newImage = document.createElement('img');
+      const newTrailLink = document.createElement('a')
+      newTrailLink.href = trail.link;
+      newTrailLink.innerHTML = trail.name;
+      newImage.src = trail.image;
+      hikingDropDown.appendChild(newImage);
+      hikingDropDown.appendChild(newTrailLink);
+    };
+  }).catch()
+
+}
+getTrails()
+
+// --------------------------Running Links------------------------------------
+
+
+
+
+//-------------------------Camping Links-------------------------------------
+
+
+
+
+//-------------------------Lakes Links---------------------------------------
