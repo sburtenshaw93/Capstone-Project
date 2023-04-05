@@ -1,6 +1,6 @@
 const createUser = () => {
     const reqBody = {
-        emailAddress: document.getElementById("emailAddress").value,
+        username: document.getElementById("emailAddress").value,
         verifyEmail: document.getElementById("verifyEmail").value,
         password: document.getElementById("password").value,
         verifyPassword: document.getElementById("verifyPassword").value,

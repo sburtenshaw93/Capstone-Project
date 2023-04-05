@@ -107,8 +107,8 @@ module.exports = {
     },
     postCreateUser: (req, res) => {
         sequelize.query(`
-        INSERT INTO createUser (username, password, phonenumber, zipcode)
-        VALUES ('${req.body.username}', '${req.body.password}', ${phonenumber}, ${zipcode}
+        INSERT INTO createUser (username, password, phoneNumber, zipcode)
+        VALUES ('${req.body.username}', '${req.body.password}', '${req.body.phoneNumber}', '${req.body.zipcode}');
         `).then((dbRes) => {
             res.status(200).send(dbRes)
         }).catch(err => {
@@ -119,7 +119,7 @@ module.exports = {
     postLogin: (req, res) => {
         sequelize.query(`
         SELECT * FROM createUser
-        WHERE username = ${req.body.username} AND password = ${req.body.password} 
+        WHERE username = '${req.body.username}' AND password = '${req.body.password}' 
         `).then((dbRes) => {
             if (dbRes[0]) {
                 res.status(200).send("Login was successful")

@@ -49,12 +49,13 @@ module.exports = {
                 name TEXT,
                 completed BOOLEAN
             );
+            DROP TABLE IF EXISTS createUser;
             CREATE TABLE IF NOT EXISTS createUser (
                 ID SERIAL PRIMARY KEY,
                 username TEXT,
                 password TEXT,
-                phonenumber INT,
-                zipcode INT
+                phoneNumber TEXT,
+                zipcode TEXT
             );
 
             INSERT INTO trails (name, link, image)
