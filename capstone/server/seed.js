@@ -43,13 +43,6 @@ module.exports = {
                 link TEXT,
                 image TEXT
             );
-            DROP TABLE if exists wishList;
-            CREATE TABLE wishList (
-                ID SERIAL PRIMARY KEY,
-                name TEXT,
-                completed BOOLEAN
-            );
-            DROP TABLE IF EXISTS createUser;
             CREATE TABLE IF NOT EXISTS createUser (
                 ID SERIAL PRIMARY KEY,
                 username TEXT,
