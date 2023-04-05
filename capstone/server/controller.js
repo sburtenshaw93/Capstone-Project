@@ -97,12 +97,38 @@ module.exports = {
     },
     deleteWishList: (req, res) => {
         sequelize.query(`
-        DELETE FROM wishList WHERE ID = ${req.params.id};
+        DELETE FROM wishList WHERE ID = ${req.params.id},
         `).then(() => {
             res.status(200).send();
         }).catch(err => {
             console.log('error', err)
             res.status(500).send()
         });
+    },
+    postCreateUser: (req, res) => {
+        sequelize.query(`
+        INSERT INTO createUser (username, password, phonenumber, zipcode)
+        VALUES ('${req.body.username}', '${req.body.password}', ${phonenumber}, ${zipcode}
+        `).then((dbRes) => {
+            res.status(200).send(dbRes)
+        }).catch(err => {
+            console.log('Error', err)
+            res.status(500).send()
+        })
+    },
+    postLogin: (req, res) => {
+        sequelize.query(`
+        SELECT * FROM createUser
+        WHERE username = ${req.body.username} AND password = ${req.body.password} 
+        `).then((dbRes) => {
+            if (dbRes[0]) {
+                res.status(200).send("Login was successful")
+            } else {
+                res.status(403).send()
+            }
+        }).catch(err => {
+            console.log('Error', err)
+            res.status(500).send()
+        })
     }
 }
