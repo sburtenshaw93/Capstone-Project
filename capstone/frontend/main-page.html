@@ -16,18 +16,55 @@
   <head>
     <meta charset="UTF-8">
     <title>Transparent Login Form HTML CSS</title>
-    <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Caveat&family=Fasthand&family=Fjalla+One&family=Homemade+Apple&family=Rampart+One&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <div id="logo">
       <h1>Avandra</h1>
     </div>
-    <button href="" id="logout">Logout</button>
+    <div id="logoutBtn">
+    <button id="logout">Logout</button>
+    </div>
     <div id="profile">
         <img id="profilepicture" src="https://live.staticflickr.com/65535/49942355807_63b0af75c6_c.jpg"/>
         <button id="profilepage">Profile Page</button>
     </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://images.unsplash.com/photo-1543039625-14cbd3802e7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3V0ZG9vcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://images.unsplash.com/photo-1533029427350-4c5bdbff11ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTQ3fHxvdXRkb29yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://images.unsplash.com/photo-1557163967-48f17ae1d65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDg2fHxjYW1wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60">
+        <div class="text"></div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
     <div id="movearound">
       <div class="hikingdropdown">
         <button onclick="hikingFunction()" class="hikingdropbtn">Hiking Trails</button>
@@ -39,39 +76,38 @@
         <button onclick="runningFunction()" class="runningdropbtn">Running Events</button>
         <div id="runningmyDropdown" class="runningdropdown-content">
           <a href="https://runtasticevents.com">Search 🔍</a>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROdkJSDvxsQiG0AJGW8uCPT514cAdAgjFW-mVHvgJfWA&usqp=CAU&ec=48665701"/>
-          <a href="https://saltlakecitymarathon.com/race-info-maps/schedule/">Salt Lake Marathon April 22nd</a>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FJxuGDpqfqPTJq0pQSiaBFmClgzLnavI0yfpDRAPyQ&usqp=CAU&ec=48665701"/>
-          <a href="https://www.utahvalleymarathon.com">Utah Valley Marathon June 3rd</a>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzPpaiSwewNpwKDIrBQFLFB3tz7QpoBd-dAocGX102sg&usqp=CAU&ec=48665701"/>
-          <a href="https://runtasticevents.com/races/timp-half/">Timp Half June 24th</a>
         </div>
       </div>
       <div class="campdropdown">
         <button onclick="campFunction()" class="campdropbtn">Camping</button>
         <div id="campmyDropdown" class="campdropdown-content">
           <a href="https://www.recreation.gov">Search 🔍</a>  
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfvam5J_qJgda8dKsCDmuOOIsCHpwHFCLnrGXZfpHtg&usqp=CAU&ec=48665701"/>
-          <a href="https://www.recreation.gov/search?q=Moab%20&start=0">Moab</a>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5LKkN_Qm-KvjYGRsUxoJd8yZOV5aLyZR0A_ViLFl9mA&usqp=CAU&ec=48665701"/>
-          <a href="https://www.recreation.gov/camping/gateways/2599">Bryce Canyon</a>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6rXxl-GpPIXDIZOpzdAxA3dix_zUGgJBP5PemKUslw&usqp=CAU&ec=48665701"/>
-          <a href="https://www.recreation.gov/camping/campgrounds/234188">Timpanogos Campground</a>
         </div>
       </div>
       <div class="lakesdropdown">
         <button onclick="lakesFunction()" class="lakesdropbtn">Near By Lakes</button>
         <div id="lakesmyDropdown" class="lakesdropdown-content">
           <a href="https://www.visitutah.com/search?q=&pageSize=12&language=en-us&types=all">Search 🔍</a>  
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYE8txfV_phXD5WX1gcAMs_JP7t5q3Oe6ksImsilm5Q&usqp=CAU&ec=48665701"/>
-          <a href="https://www.google.com/maps/dir//Silver+Lake,+Utah/@40.6041735,-111.5889376,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8752719c1cea5faf:0xb2dd8d320eb70ed!2m2!1d-111.5889376!2d40.6041735!3e0">Silver Lake</a>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5SWvoXMd7KG6kAvDRHFug_P5piE4GGuEj7lrI3cnPjQ&usqp=CAU&ec=48665701"/>
-          <a href="https://www.google.com/maps/dir//Tibble+Fork+Reservoir,+Utah/@40.4823404,-111.6440872,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x875277e871142ce5:0x17d4525eb61ae2cc!2m2!1d-111.6440872!2d40.4823404!3e0">Tibble Fork Reservoir</a>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtRAjfxxOxPNv05kS1RvW34m9HmL9WGBtDLoaQtyI9cg&usqp=CAU&ec=48665701"/>
-          <a href="https://www.google.com/maps/dir//Deer+Creek+Reservoir,+Utah/@40.44528,-111.4961523,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x874d8b1599076d0f:0xf0cff7c6fe750e11!2m2!1d-111.4961523!2d40.44528!3e0">Deer Creek</a>
         </div>
       </div>
     </div>
+  <!-- Favorites list -->
+  <div class="favoriteList">
+    <div>
+      <label for="new-task">Add Item</label>
+      <input id="new-task" type="text" />
+      <button id="add-favorite-btn">Add</button>
+    </div>
+    
+    <h3>Wish List</h3>
+    <ul id="incomplete-tasks">
+    </ul>
+    
+    <h3>Completed</h3>
+    <ul id="completed-tasks">
+    </ul>
+  </div>
+
   </head>
 <body>
 </body>
